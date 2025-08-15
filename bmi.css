@@ -1,98 +1,73 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: #f8f9fa;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    padding-top: 50px;
 }
 
-.bmi-container {
-    width: 700px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.bmi-box {
+    width: 650px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
     overflow: hidden;
 }
 
 .bmi-header {
-    background-color: #3ca3a3;
-    padding: 20px;
+    background-color: #3ca4ad;
     color: white;
+    padding: 15px;
 }
 
 .bmi-header h2 {
     margin: 0;
-    font-size: 22px;
 }
 
 .bmi-header p {
-    margin: 5px 0 0;
+    margin: 4px 0 0 0;
     font-size: 14px;
 }
 
 .bmi-content {
     display: flex;
-    justify-content: space-between;
     padding: 20px;
-    align-items: center;
 }
 
-.inputs {
-    width: 50%;
+.bmi-inputs {
+    flex: 1;
 }
 
-label {
+.bmi-inputs label {
     display: block;
-    margin-top: 10px;
     font-weight: bold;
-}
-
-.input-group {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-input {
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 100px;
-}
-
-.input-group span {
-    margin-left: 8px;
-    color: gray;
-}
-
-button {
-    background-color: #3ca3a3;
-    color: white;
-    padding: 8px 15px;
-    border: none;
     margin-top: 15px;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #2e7c7c;
+.bmi-inputs input {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px 5px 0 0;
 }
 
-.results {
+.bmi-output {
+    width: 150px;
     text-align: center;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.bmi-value {
+#bmi-value {
     font-size: 40px;
+    color: #3ca4ad;
     font-weight: bold;
-    color: #3ca3a3;
 }
 
-.bmi-status {
+#bmi-status {
     font-size: 16px;
     margin-top: 5px;
-    font-weight: bold;
 }
+
