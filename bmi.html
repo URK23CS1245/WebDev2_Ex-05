@@ -7,31 +7,22 @@
 </head>
 <body>
 
-<div class="bmi-container">
+<div class="bmi-box">
     <div class="bmi-header">
         <h2>Body mass index (BMI)</h2>
         <p>A measure of body fat in adults</p>
     </div>
     <div class="bmi-content">
-        <div class="inputs">
+        <div class="bmi-inputs">
             <label>Weight</label>
-            <div class="input-group">
-                <input type="number" id="weight" placeholder="Enter weight">
-                <span>kg</span>
-            </div>
+            <input type="number" id="weight" value="85" oninput="calculateBMI()"> kg
 
             <label>Height</label>
-            <div class="input-group">
-                <input type="number" id="height" placeholder="Enter height">
-                <span>cm</span>
-            </div>
-
-            <button onclick="calculateBMI()">Calculate</button>
+            <input type="number" id="height" value="180" oninput="calculateBMI()"> cm
         </div>
-
-        <div class="results">
-            <div id="bmiValue" class="bmi-value">--</div>
-            <div id="bmiStatus" class="bmi-status"></div>
+        <div class="bmi-output">
+            <div id="bmi-value">--</div>
+            <div id="bmi-status"></div>
         </div>
     </div>
 </div>
@@ -39,3 +30,4 @@
 <script src="bmi.js"></script>
 </body>
 </html>
+
